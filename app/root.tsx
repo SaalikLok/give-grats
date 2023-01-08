@@ -1,22 +1,23 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+  ScrollRestoration
+} from '@remix-run/react'
+import type { ReactElement } from 'react'
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "GiveGrats",
-  viewport: "width=device-width,initial-scale=1",
-});
+  charset: 'utf-8',
+  title: 'GiveGrats',
+  viewport: 'width=device-width,initial-scale=1'
+})
 
-export default function App() {
+export default function App (): ReactElement {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
         <Meta />
         <Links />
@@ -28,5 +29,5 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }

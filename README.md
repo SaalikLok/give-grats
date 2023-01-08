@@ -1,6 +1,10 @@
-# Welcome to Remix!
+[![TS-Standard - TypeScript Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)
 
-- [Remix Docs](https://remix.run/docs)
+# GiveGrats
+
+An open source project to share our collective gratitude.
+
+Built with [Remix](https://remix.run).
 
 ## Fly Setup
 
