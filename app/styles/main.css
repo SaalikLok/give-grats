@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rowdies&display=swap');
+
+body {
+  background-color: #323232;
+  color: #fafafa;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Rowdies';
+}

@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration
 } from '@remix-run/react'
+import styles from '~/styles/main.css'
 import type { ReactElement } from 'react'
 
 export const meta: MetaFunction = () => ({
@@ -14,6 +15,10 @@ export const meta: MetaFunction = () => ({
   title: 'GiveGrats',
   viewport: 'width=device-width,initial-scale=1'
 })
+
+export const links = (): [{}] => {
+  return [{ rel: 'stylesheet', href: styles }]
+}
 
 export default function App (): ReactElement {
   return (
