@@ -6,6 +6,18 @@ An open source project to share our collective gratitude.
 
 Built with [Remix](https://remix.run).
 
+
+## Development
+
+From your terminal:
+
+```sh
+npm run dev
+```
+
+This starts your app in development mode, rebuilding assets on file changes.
+
+
 ## Fly Setup
 
 1. [Install `flyctl`](https://fly.io/docs/getting-started/installing-flyctl/)
@@ -21,16 +33,6 @@ flyctl auth signup
 ```sh
 flyctl launch
 ```
-
-## Development
-
-From your terminal:
-
-```sh
-npm run dev
-```
-
-This starts your app in development mode, rebuilding assets on file changes.
 
 ## Deployment
 
