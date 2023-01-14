@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rowdies&display=swap');
+@import url('./thatch.css');
 
 body {
   background-color: #323232;
@@ -8,5 +9,51 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Rowdies';
+  font-family: 'Rowdies', sans-serif;
+}
+
+textarea {
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+  resize: none;
+}
+
+textarea:focus {
+  outline: solid 3px #76B041;
+}
+
+button {
+  color: #323232;
+  background-color: #fafafa;
+  font-family: 'Rowdies', sans-serif;
+  border: none;
+  width: 120px;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+  padding: 0.3rem;
+}
+
+button:hover {
+  transform: scale(1.1); 
+}
+
+a {
+  color: #fafafa;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+.how-it-works {
+  text-align: left;
+}
+
+.grat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
