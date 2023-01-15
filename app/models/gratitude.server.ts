@@ -5,18 +5,17 @@ export async function createGratitude (content: string): Promise<Gratitude> {
   return await prisma.gratitude.create({ data: { content } })
 }
 
-export function getRandomGratitude (): string {
-  let grat = ''
-
-  prisma.gratitude.findMany({ take: 10 }).then(grats => {
+export async function getRandomGratitude (): Promise<string> {
+  console.log('getting random grat from server')
+  const gratitude = prisma.gratitude.findMany({ take: 10 }).then(grats => {
     const gratsContents = grats.map(grat => grat.content)
-    grat = randomGrat(gratsContents)
+    return randomGrat(gratsContents)
   }).catch(err => {
     console.error(err)
     return 'uh oh, something went wrong!'
   })
 
-  return grat
+  return await gratitude
 }
 
 export function randomGrat (grats: string[]): string {

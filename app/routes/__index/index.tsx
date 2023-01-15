@@ -1,4 +1,5 @@
 import type { ActionFunction } from '@remix-run/node'
+import { Link } from '@remix-run/react'
 import type { ReactElement } from 'react'
 import { useState } from 'react'
 import GratForm from '~/components/GratForm'
@@ -32,14 +33,11 @@ export default function Index (): ReactElement {
   }
 
   return (
-    <main className='thatch-container--super-narrow'>
-      <h1 className='title'>GiveGrats 🎁</h1>
-
+    <div>
       {display}
 
       <p className='display-text' onClick={() => setDisplayForm(!displayForm)}>{displayText}</p>
-
-      <SiteFooter />
-    </main>
+      <Link to='/grat'>See a Grat</Link>
+    </div>
   )
 }
