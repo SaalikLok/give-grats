@@ -57,3 +57,10 @@ footer {
   gap: 2rem;
   align-items: center;
 }
+
+.display-text {
+  margin-top: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
