@@ -4,7 +4,6 @@ import type { ReactElement } from 'react'
 import { useState } from 'react'
 import GratForm from '~/components/GratForm'
 import HowTo from '~/components/HowTo'
-import SiteFooter from '~/components/SiteFooter'
 import { createGratitude } from '~/models/gratitude.server'
 
 export const action: ActionFunction = async ({ request }) => {
@@ -14,7 +13,7 @@ export const action: ActionFunction = async ({ request }) => {
     await createGratitude(grat)
   }
 
-  console.log({ grat })
+  console.log(`created a gratitude: ${grat}`)
   return { ok: true }
 }
 

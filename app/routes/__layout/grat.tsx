@@ -1,6 +1,5 @@
 import { Link, useLoaderData } from '@remix-run/react'
 import type { ReactElement } from 'react'
-import SiteFooter from '~/components/SiteFooter'
 import { getRandomGratitude } from '~/models/gratitude.server'
 
 export async function loader (): Promise<string> {
@@ -9,6 +8,7 @@ export async function loader (): Promise<string> {
 
 export default function Grat (): ReactElement {
   const gratitude = useLoaderData<typeof loader>()
+  console.log(`IN ROUTE: ${gratitude}`)
   return (
     <div>
       <div className='gratitude-box'>
